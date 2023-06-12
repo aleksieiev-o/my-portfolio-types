@@ -4,7 +4,7 @@
   "description": "My portfolio types",
   "license": "MIT",
   "author": "Oleksandr Aleksieiev",
-  "private": true,
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:aleksieiev-o/my-portfolio-types.git"
