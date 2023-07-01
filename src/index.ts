@@ -1,5 +1,6 @@
 /* for Base entities */
 export interface IBaseEntity {
+  id: string;
   title: string;
   visibility: boolean;
 }
