@@ -30,7 +30,7 @@ export type TSkillList = Array<ISkill>;
 export interface IProject extends IBaseEntity, IFile {
   description: string;
   mainTechnology: string;
-  releaseDate: Date;
+  releaseDate: string;
   repository: string;
   demo: string;
   technologies: Array<string>;
@@ -42,7 +42,7 @@ export type TProjectList = Array<IProject>;
 export interface IPersonalInfo {
   firstName: string;
   lastName: string;
-  birthDate: Date;
+  birthDate: string;
   aboutMe: string;
   country: string;
   town: string;
