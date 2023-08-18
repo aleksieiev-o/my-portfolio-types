@@ -3,6 +3,9 @@ export interface IBaseEntity {
   id: string;
   title: string;
   visibility: boolean;
+  position: number;
+  createdDate: string;
+  updatedDate: string;
 }
 
 /* for Files */
