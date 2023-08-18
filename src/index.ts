@@ -3,7 +3,7 @@ export interface IBaseEntity {
   id: string;
   title: string;
   visibility: boolean;
-  position: number;
+  position: string;
   createdDate: string;
   updatedDate: string;
 }
