@@ -25,6 +25,7 @@ export type TSocialList = Array<ISocial>;
 export interface ISkill extends IBaseEntity {
   experience: string;
   color: string;
+  isMain: boolean;
 }
 
 export type TSkillList = Array<ISkill>;
