@@ -46,8 +46,10 @@ export type TProjectList = Array<IProject>;
 export interface IPersonalInfo {
   firstName: string;
   lastName: string;
+  email: string;
   birthDate: string;
   aboutMe: string;
+  biography: string;
   country: string;
   town: string;
 }
