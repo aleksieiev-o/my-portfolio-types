@@ -37,7 +37,7 @@ export interface IProject extends IBaseEntity, IFile {
 
 export type TProjectList = Array<IProject>;
 
-interface IDocument extends IBaseEntity, IFile {
+export interface IDocument extends IBaseEntity, IFile {
   lang: string;
 }
 
