@@ -1,4 +1,3 @@
-/* for Base entities */
 export interface IBaseEntity {
   id: string;
   title: string;
@@ -8,20 +7,17 @@ export interface IBaseEntity {
   updatedDate: string;
 }
 
-/* for Files */
 export interface IFile {
   fileName: string;
   fileSrc: string;
 }
 
-/* for Socials */
 export interface ISocial extends IBaseEntity {
   url: string;
 }
 
 export type TSocialList = Array<ISocial>;
 
-/* for Skills */
 export interface ISkill extends IBaseEntity {
   experience: string;
   color: string;
@@ -30,7 +26,6 @@ export interface ISkill extends IBaseEntity {
 
 export type TSkillList = Array<ISkill>;
 
-/* for Projects */
 export interface IProject extends IBaseEntity, IFile {
   description: string;
   mainTechnology: string;
@@ -42,7 +37,12 @@ export interface IProject extends IBaseEntity, IFile {
 
 export type TProjectList = Array<IProject>;
 
-/* for Personal info */
+interface IDocument extends IBaseEntity, IFile {
+  lang: string;
+}
+
+export type TDocumentList = Array<IDocument>;
+
 export interface IPersonalInfo {
   firstName: string;
   lastName: string;
