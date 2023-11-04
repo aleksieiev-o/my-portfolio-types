@@ -14,6 +14,7 @@ export interface IFile {
 
 export interface ISocial extends IBaseEntity {
   url: string;
+  iconName: string;
 }
 
 export type TSocialList = Array<ISocial>;
