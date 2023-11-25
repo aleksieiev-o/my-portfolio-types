@@ -53,4 +53,5 @@ export interface IPersonalInfo {
   biography: string;
   country: string;
   town: string;
+  mapPoint: string;
 }
