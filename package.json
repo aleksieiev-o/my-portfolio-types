@@ -21,6 +21,9 @@
   "scripts": {
     "build": "tsc",
     "publish": "npm publish",
+    "inc_ver_patch": "./bump-version.sh patch",
+    "inc_ver_minor": "./bump-version.sh minor",
+    "inc_ver_major": "./bump-version.sh major",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
