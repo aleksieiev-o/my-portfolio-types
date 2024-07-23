@@ -2,7 +2,7 @@ export interface IBaseEntity {
   id: string;
   title: string;
   visibility: boolean;
-  position: string;
+  position: number;
   createdDate: string;
   updatedDate: string;
 }
@@ -11,6 +11,8 @@ export interface IFile {
   fileName: string;
   fileSrc: string;
 }
+
+export type TFileList = Array<IFile>;
 
 export interface ISocial extends IBaseEntity {
   url: string;
@@ -27,13 +29,15 @@ export interface ISkill extends IBaseEntity {
 
 export type TSkillList = Array<ISkill>;
 
-export interface IProject extends IBaseEntity, IFile {
+export interface IProject extends IBaseEntity {
   description: string;
   mainTechnology: string;
   releaseDate: string;
   repository: string;
   demo: string;
   technologies: Array<string>;
+  preview: IFile;
+  screensList: TFileList;
 }
 
 export type TProjectList = Array<IProject>;
