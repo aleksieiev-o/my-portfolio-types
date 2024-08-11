@@ -36,7 +36,6 @@ export interface IProject extends IBaseEntity {
   repository: string;
   demo: string;
   technologies: Array<string>;
-  preview: IFile;
   screensList: TFileList;
 }
 
