@@ -22,7 +22,7 @@ export interface ISocial extends IBaseEntity {
 export type TSocialList = Array<ISocial>;
 
 export interface ISkill extends IBaseEntity {
-  experience: string;
+  experience: number;
   color: string;
   isMain: boolean;
 }
